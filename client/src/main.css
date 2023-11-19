@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html, body, #app {
+		@apply h-full;
+	}
+
+	::-webkit-scrollbar {
+		@apply w-2;
+	}
+
+	::-webkit-scrollbar-track {
+		@apply bg-slate-600;
+	}
+
+	::-webkit-scrollbar-thumb {
+		@apply bg-green-500;
+	}
+}
+
+@layer components {
+	.container {
+		@apply max-w-[72rem];
+	}
+}
